@@ -1,0 +1,25 @@
+{
+  "name": "miccon",
+  "version": "0.1.1",
+  "description": "HTML Generator",
+  "main": "index.js",
+  "scripts": {
+    "test": "browserify ./test/test.js -o ./test/bundle.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tngmichael/npm-package.git"
+  },
+  "keywords": [
+    "html"
+  ],
+  "author": "michael",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tngmichael/npm-package/issues"
+  },
+  "homepage": "https://github.com/tngmichael/npm-package#readme",
+  "devDependencies": {
+    "browserify": "^14.3.0"
+  }
+}

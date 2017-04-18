@@ -1,1 +1,3 @@
-# npm-package
+# Miccon
+
+Home made html generator
