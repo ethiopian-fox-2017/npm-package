@@ -4,15 +4,10 @@ const axios = require('axios')
 // Define var
 let fixer = 'http://api.fixer.io/latest'
 
-// Get fixer with axios
-function getLatestRates(data) {
-  return axios.get(`${fixer}?base=${data}`)
-}
-
 // functions
 module.exports = {
 
-  convert(value, from, to) {
+  convert(value, from, to, callback) {
 
     // Validate input
     if(typeof value !== 'number' || value == void 0 || value == null) {
@@ -26,7 +21,8 @@ module.exports = {
     }
 
     // get rates from fixer.io
-    return axios.all([getLatestRates(from)]).then((res)=> {
+    axios.get(`${fixer}?base=${from}`)
+      .then((res)=> {
 
         let rates = res.data.rates,
             currencyRate = 0
@@ -36,7 +32,10 @@ module.exports = {
             currencyRate = rates[rate]
         }
 
-        return accounting.formatMoney((value * currencyRate), `${to} `, 2)
+        callback(accounting.formatMoney((value * currencyRate), `${to} `, 2))
+      })
+      .catch((err)=> {
+        callback(err)
       })
   }
 }

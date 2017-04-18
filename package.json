@@ -4,7 +4,7 @@
   "description": "A simple currency converter using fixer.io API with accountingjs",
   "main": "index.js",
   "scripts": {
-    "test": "ava"
+    "test": "node test.js"
   },
   "repository": {
     "type": "git",
@@ -24,8 +24,5 @@
   "dependencies": {
     "accounting": "^0.4.1",
     "axios": "^0.16.1"
-  },
-  "devDependencies": {
-    "ava": "^0.19.1"
   }
 }
