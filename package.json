@@ -1,0 +1,22 @@
+{
+  "name": "calculator-mania",
+  "version": "0.1.0",
+  "description": "simple calculator for beginner",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/habilhusni/npm-package.git"
+  },
+  "keywords": [
+    "calculator"
+  ],
+  "author": "husnihabil",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/habilhusni/npm-package/issues"
+  },
+  "homepage": "https://github.com/habilhusni/npm-package#readme"
+}
