@@ -1,0 +1,19 @@
+{
+  "name": "darren-super-calculator",
+  "version": "0.1.0",
+  "description": "Calculator that make your life easier",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zidane9/npm-package.git"
+  },
+  "author": "Darren",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zidane9/npm-package/issues"
+  },
+  "homepage": "https://github.com/zidane9/npm-package#readme"
+}
