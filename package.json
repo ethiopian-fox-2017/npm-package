@@ -1,0 +1,28 @@
+{
+  "name": "convert-your-currency",
+  "version": "0.1.0",
+  "description": "A simple currency converter using fixer.io API with accountingjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andrasat/npm-package.git"
+  },
+  "keywords": [
+    "simple",
+    "currency",
+    "converter"
+  ],
+  "author": "Andra Satria <andra.satria1@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/andrasat/npm-package/issues"
+  },
+  "homepage": "https://github.com/andrasat/npm-package#readme",
+  "dependencies": {
+    "accounting": "^0.4.1",
+    "axios": "^0.16.1"
+  }
+}
